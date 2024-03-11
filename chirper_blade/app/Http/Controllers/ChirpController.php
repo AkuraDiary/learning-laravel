@@ -13,10 +13,9 @@ class ChirpController extends Controller
      * Display a listing of the resource.
      */
 
-
-    public function index():View
+    public function index(): View
     {
-        return view('chirps.index');
+        return view("chirps.index");
     }
 
     /**
@@ -32,6 +31,7 @@ class ChirpController extends Controller
      */
     public function store(Request $request)
     {
+        return response("Chirp created", Response::HTTP_CREATED);
         //
     }
 
